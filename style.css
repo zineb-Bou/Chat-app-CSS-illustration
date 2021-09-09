@@ -45,6 +45,11 @@ body {
   height: 100vh;
 }
 
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
 
 /* text section */
 .text-section {
