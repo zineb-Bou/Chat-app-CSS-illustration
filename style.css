@@ -45,3 +45,42 @@ body {
   height: 100vh;
 }
 
+
+/* text section */
+.text-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.main-heading {
+  color: var(--Very-Dark-Desaturated-Violet);
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+.paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6em;
+  color: var(--Dark-Grayish-Violet);
+  margin: 0;
+  padding: 0;
+  margin-right: 48px;
+}
+.text-section .background-styling {
+  position: absolute;
+  width: 200px;
+  height: 600px;
+  border-radius: 1000px 0 0 0;
+  bottom: 0;
+  right: -140px;
+  z-index: -120;
+  background: none;
+  background-color: var(--Pale-Violet);
+  opacity: 0.09;
+}
