@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  /* Text */
+  /*  (sub-heading at the top of the app UI) */
+  --Pale-Violet: hsl(276, 100%, 81%);
+  /*  (chat on the left) */
+  --Moderate-Violet: hsl(276, 55%, 52%);
+  /* (chat on the right) */
+  --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+  /* (placeholder text) */
+  --Grayish-Blue: hsl(206, 6%, 79%);
+  /*  (main heading) */
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  /*  (paragraph) */
+  --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+  /* Gradients */
+  /* 
+These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+
+  --Light-Magenta: hsl(293, 100%, 63%);
+  --Light-Violet: hsl(264, 100%, 61%);
+
+  /* Secondary */
+
+  --White: hsl(0, 0%, 100%);
+  /* (app background) */
+  --Light-Grayish-Violet: hsl(270, 20%, 96%);
+  /* (submit button background) */
+  --Very-Dark-DesaturatedViolet: hsl(271, 36%, 24%);
+  /* (radio button outline) */
+  --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
