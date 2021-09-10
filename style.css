@@ -314,3 +314,38 @@ body {
   background-color: var(--Pale-Violet);
   opacity: 0.09;
 }
+
+/* defining width for screens < 600px  */
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+  .mobile-screen-section {
+    width: 100%;
+  }
+  .mobile {
+    margin-top: 64px;
+  }
+  .text-section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-section::after {
+    width: 250px;
+    height: 400px;
+    border-radius: 300px 0 0 0;
+    bottom: 0;
+    right: -140px;
+  }
+
+  .main-heading {
+    margin: 32px 0;
+  }
+  .paragraph {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+}
