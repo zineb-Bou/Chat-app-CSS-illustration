@@ -16,8 +16,9 @@ Users should be able to:
 - See the chat interface animate on the initial load
 
 
-<!-- ## Live site URL 
-[Live site URL](https://zineb-bou.github.io/Chat-app-CSS-illustration/) -->
+## Live site URL 
+[Live site URL](https://zineb-bou.github.io/Chat-app-CSS-illustration/)
+
 ## Author
 
 - Website - [Zineb Boutaa](https://zineb-bou.github.io/)
