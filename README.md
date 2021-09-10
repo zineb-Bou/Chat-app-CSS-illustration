@@ -8,7 +8,7 @@ Thanks for checking out this solution.
 
 ## The challenge
 
-The challenge is to build out this feature illustration using HTML & CSS and get it looking as close to the design as possible.
+Build out this feature illustration using HTML & CSS and get it looking as close to the design as possible.
 
 Users should be able to:
 
