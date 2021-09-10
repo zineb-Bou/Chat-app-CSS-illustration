@@ -341,7 +341,7 @@ body {
   }
   .text-section::after {
     width: 250px;
-    height: 400px;
+    height: 300px;
     border-radius: 300px 0 0 0;
     bottom: 0;
     right: -140px;
