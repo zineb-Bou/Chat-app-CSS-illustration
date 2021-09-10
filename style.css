@@ -41,7 +41,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--Light-Grayish-Violet);
+  background-color: #fff;
 }
 
 .main {
@@ -68,10 +68,11 @@ body {
 }
 .mobile {
   box-sizing: border-box;
-  width: 300px;
-  height: 580px;
+  width: 280px;
+  height: 550px;
   border-radius: 35px;
   margin-left: -180px;
+  border: none;
   /* layout */
   display: flex;
   flex-direction: row;
@@ -83,8 +84,8 @@ body {
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 .app {
-  width: 278px;
-  height: 545px;
+  width: 260px;
+  height: 520px;
   border-radius: 30px;
   /* ** */
   background-color: var(--Light-Grayish-Violet);
@@ -179,18 +180,18 @@ body {
   grid-row: 3/4;
 }
 .media-msg img {
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   border-radius: 10px;
   animation: fading 2s ease-out backwards;
 }
 .received-msg {
   margin: 0;
   margin-bottom: 12px;
-  padding: 5px 5px 5px 10px;
-  border-radius: 8px 8px 4px 8px;
+  padding: 4px 4px 4px 10px;
+  border-radius: 8px 8px 8px 2px;
   /* text */
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   line-height: 15px;
   /* colors */
   color: var(--Moderate-Violet);
@@ -214,10 +215,10 @@ body {
 .sent-msg {
   margin: 0;
   margin-bottom: 12px;
-  padding: 5px 5px 5px 10px;
-  border-radius: 8px 8px 4px 8px;
+  padding: 4px 4px 4px 10px;
+  border-radius: 8px 8px 2px 8px;
   /* text */
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   /* colors  */
   color: var(--Very-Dark-Desaturated-Violet);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
@@ -325,6 +326,7 @@ body {
   /* text */
   font-size: 2.5rem;
   font-weight: 500;
+  text-align: left;
   /* colors */
   color: var(--Very-Dark-Desaturated-Violet);
 }
@@ -340,7 +342,7 @@ body {
 }
 .text-section::after {
   content: '';
-  width: 400px;
+  width: 300px;
   height: 600px;
   border-radius: 300px 0 0 0;
   position: absolute;
@@ -410,6 +412,7 @@ body {
 
   .main-heading {
     margin: 32px 0;
+    text-align: center;
   }
   .paragraph {
     text-align: center;
