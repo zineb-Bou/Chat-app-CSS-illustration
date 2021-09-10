@@ -69,9 +69,9 @@ body {
   background-color: var(--White);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-  border-radius: 25px;
+  border-radius: 35px;
   margin-top: 50px;
-  margin-left: -80px;
+  margin-left: -120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,17 +83,16 @@ body {
   border-radius: 25px;
 }
 .app .top-header {
-  height: 80px;
+  height: 70px;
   width: 100%;
   border-radius: 25px 25px 5px 5px;
   position: relative;
   background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-around;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .app .top-header::before {
@@ -109,17 +108,20 @@ body {
 }
 .top-header .fas {
   color: #fff;
-  margin-bottom: 16px;
+  margin: 18px 12px;
 }
 
 .app .top-header .profile {
+  color: #fff;
+  position: absolute;
+  left: 30px;
+  bottom: 12px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin-bottom: 8px;
 }
 .profile .avatar {
-  height: 40px;
-  height: 40px;
+  height: 30px;
+  height: 30px;
   border-radius: 1000px;
   box-sizing: border-box;
   border: 2px solid #fff;
@@ -132,7 +134,7 @@ body {
   grid-row: 1/2;
   grid-column: 2/3;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: bold;
 }
 .profile .occupation {
