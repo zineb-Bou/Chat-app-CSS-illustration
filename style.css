@@ -382,3 +382,59 @@ body {
     margin-bottom: 32px;
   }
 }
+
+/* defining width for screens < 300px  */
+@media (max-width: 400px) {
+  .mobile {
+    width: 250px;
+    height: 460px;
+    margin-left: -200px;
+  }
+  .app {
+    width: 230px;
+    height: 440px;
+  }
+  .app .top-header .profile {
+    position: absolute;
+    left: 30px;
+    bottom: 12px;
+    /* layout */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* colors */
+    color: #fff;
+  }
+  .app .top-header {
+    height: 50px;
+  }
+  .top-header .fas {
+    margin: 10px 12px;
+  }
+  .app .top-header .profile {
+    bottom: 4px;
+  }
+  .app .top-header::before {
+    height: 15px;
+  }
+  .media-msg img {
+    height: 35px;
+    width: 35px;
+  }
+  .received-msg {
+    margin-bottom: 10px;
+    font-size: 0.55rem;
+    line-height: 12px;
+  }
+  .sent-msg {
+    margin-bottom: 10px;
+    font-size: 0.55rem;
+    line-height: 12px;
+  }
+  .walk-istimate {
+    height: 28px;
+    margin-bottom: 6px;
+  }
+  .input {
+    margin-top: 6px;
+  }
+}
