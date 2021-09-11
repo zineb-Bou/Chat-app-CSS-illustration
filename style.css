@@ -103,6 +103,7 @@ body {
   background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  animation: fading 2s 0.5s ease-out backwards;
 }
 
 .app .top-header::before {
@@ -296,6 +297,7 @@ body {
   color: var(--Dark-Grayish-Violet);
   /* text */
   font-size: 0.8rem;
+  animation: fading 2s 0.5s ease-out backwards;
 }
 .input .submit-btn {
   border: none;
