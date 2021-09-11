@@ -8,7 +8,7 @@ Thanks for checking out this solution.
 
 ## The challenge
 
-The challenge is to build out this feature illustration using HTML & CSS and get it looking as close to the design as possible.
+Build out this feature illustration using HTML & CSS and get it looking as close to the design as possible.
 
 Users should be able to:
 
@@ -16,8 +16,9 @@ Users should be able to:
 - See the chat interface animate on the initial load
 
 
-<!-- ## Live site URL 
-[Live site URL](https://zineb-bou.github.io/Chat-app-CSS-illustration/) -->
+## Live site URL 
+[Live site URL](https://zineb-bou.github.io/Chat-app-CSS-illustration/)
+
 ## Author
 
 - Website - [Zineb Boutaa](https://zineb-bou.github.io/)
