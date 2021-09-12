@@ -19,7 +19,7 @@
   --Dark-Grayish-Violet: hsl(270, 7%, 64%);
 
   /* Gradients */
-  /* 
+  /*
 These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
 
   --Light-Magenta: hsl(293, 100%, 63%);
@@ -106,8 +106,8 @@ body {
   align-items: flex-end;
   /* colors */
   background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
   animation: fading 2s 0.5s ease-out backwards;
 }
 
@@ -141,7 +141,6 @@ body {
 }
 .profile .avatar {
   box-sizing: border-box;
-  height: 30px;
   height: 30px;
   border-radius: 1000px;
   border: 2px solid #fff;
@@ -194,8 +193,7 @@ body {
   animation: fading 2s 0.5s ease-out backwards;
 }
 .received-msg {
-  margin: 0;
-  margin-bottom: 12px;
+  margin: 0 0 12px;
   padding: 4px 4px 4px 10px;
   border-radius: 8px 8px 8px 2px;
   /* text */
@@ -203,8 +201,8 @@ body {
   line-height: 15px;
   /* colors */
   color: var(--Moderate-Violet);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 0,
+    rgba(0, 0, 0, 0.1) 0 0 1px 0;
   background: #ede5f4;
   animation: loading-left 1s 0.5s ease-out backwards;
 }
@@ -221,16 +219,15 @@ body {
   grid-row: 6/7;
 }
 .sent-msg {
-  margin: 0;
-  margin-bottom: 12px;
+  margin: 0 0 12px;
   padding: 4px 4px 4px 10px;
   border-radius: 8px 8px 2px 8px;
   /* text */
   font-size: 0.6rem;
   /* colors  */
   color: var(--Very-Dark-Desaturated-Violet);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 0,
+    rgba(0, 0, 0, 0.1) 0 0 1px 0;
   background-color: #fff;
   animation: loading-right 1s 0.5s ease-out backwards;
 }
@@ -421,14 +418,12 @@ body {
   }
 
   .main-heading {
-    margin: 0;
-    margin-bottom: 64px;
+    margin: 0 0 64px;
     text-align: center;
   }
   .paragraph {
     text-align: center;
-    margin: 0;
-    margin-bottom: 32px;
+    margin: 0 0 32px;
   }
 }
 
@@ -444,7 +439,6 @@ body {
     height: 440px;
   }
   .profile .avatar {
-    height: 25px;
     height: 25px;
   }
   .profile .name {
