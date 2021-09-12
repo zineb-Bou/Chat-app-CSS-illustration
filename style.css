@@ -37,17 +37,22 @@ These two colors are the vibrant background colors you see throughout the design
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  flex: 1;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #fff;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif;
 }
 
 .main {
+  flex: 1;
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 .mobile-screen-section {
   width: 55%;
@@ -59,8 +64,8 @@ body {
   content: '';
   height: 600px;
   width: 600px;
-  margin-top: -200px;
-  margin-left: -400px;
+  margin-top: -50%;
+  margin-left: -600px;
   z-index: -100;
   border-radius: 0 0 1000px 1000px;
   /* colors */
