@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 :root {
   /* Colors */
 
@@ -19,7 +19,7 @@
   --Dark-Grayish-Violet: hsl(270, 7%, 64%);
 
   /* Gradients */
-  /* 
+  /*
 These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
 
   --Light-Magenta: hsl(293, 100%, 63%);
@@ -37,17 +37,22 @@ These two colors are the vibrant background colors you see throughout the design
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  flex: 1;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #fff;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif;
 }
 
 .main {
+  flex: 1;
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 .mobile-screen-section {
   width: 55%;
@@ -57,21 +62,23 @@ body {
 }
 .mobile-screen-section:before {
   content: '';
-  height: 600px;
+  height: 0;
   width: 600px;
-  margin-top: -200px;
-  margin-left: -400px;
-  z-index: -100;
+  margin-top: -50%;
+  margin-left: -600px;
+  z-index: -1;
   border-radius: 0 0 1000px 1000px;
   /* colors */
   background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  /* dropping down animation */
+  animation: dropping 0.75s 1.25s ease-in forwards;
 }
 .mobile {
   box-sizing: border-box;
   width: 280px;
   height: 550px;
   border-radius: 35px;
-  margin-left: -180px;
+  margin-left: -80px;
   border: none;
   /* layout */
   display: flex;
@@ -82,6 +89,8 @@ body {
   background-color: var(--White);
   box-shadow: rgba(183, 173, 187, 0.25) 40px 30px 60px -12px,
     rgba(245, 211, 247, 0.3) 40px 18px 36px -18px;
+  /* fading animation */
+  animation: fading 1.25s 0s ease-in forwards;
 }
 .app {
   width: 260px;
@@ -101,8 +110,8 @@ body {
   align-items: flex-end;
   /* colors */
   background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
   animation: fading 2s 0.5s ease-out backwards;
 }
 
@@ -136,7 +145,6 @@ body {
 }
 .profile .avatar {
   box-sizing: border-box;
-  height: 30px;
   height: 30px;
   border-radius: 1000px;
   border: 2px solid #fff;
@@ -189,8 +197,7 @@ body {
   animation: fading 2s 0.5s ease-out backwards;
 }
 .received-msg {
-  margin: 0;
-  margin-bottom: 12px;
+  margin: 0 0 12px;
   padding: 4px 4px 4px 10px;
   border-radius: 8px 8px 8px 2px;
   /* text */
@@ -198,8 +205,8 @@ body {
   line-height: 15px;
   /* colors */
   color: var(--Moderate-Violet);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 0,
+    rgba(0, 0, 0, 0.1) 0 0 1px 0;
   background: #ede5f4;
   animation: loading-left 1s 0.5s ease-out backwards;
 }
@@ -216,16 +223,15 @@ body {
   grid-row: 6/7;
 }
 .sent-msg {
-  margin: 0;
-  margin-bottom: 12px;
+  margin: 0 0 12px;
   padding: 4px 4px 4px 10px;
   border-radius: 8px 8px 2px 8px;
   /* text */
   font-size: 0.6rem;
   /* colors  */
   color: var(--Very-Dark-Desaturated-Violet);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 0,
+    rgba(0, 0, 0, 0.1) 0 0 1px 0;
   background-color: #fff;
   animation: loading-right 1s 0.5s ease-out backwards;
 }
@@ -238,7 +244,7 @@ body {
   grid-row: 5/6;
 }
 
-.walk-istimate {
+.walk-estimate {
   box-sizing: border-box;
   width: 180px;
   height: 35px;
@@ -260,22 +266,22 @@ body {
   color: #fff;
   animation: loading-left 1s 0.5s ease-out backwards;
 }
-.walk-istimate .price {
+.walk-estimate .price {
   position: absolute;
   right: 10px;
   /* text */
   font-size: 1.2rem;
   font-weight: 700;
 }
-.walk-istimate .far {
+.walk-estimate .far {
   opacity: 0.6;
   margin: 0 4px;
 }
-.walk-istimate.walk-istimate-1 {
+.walk-estimate.walk-estimate-1 {
   grid-column: 1/3;
   grid-row: 7/8;
 }
-.walk-istimate.walk-istimate-2 {
+.walk-estimate.walk-estimate-2 {
   grid-column: 1/3;
   grid-row: 8/9;
 }
@@ -333,6 +339,8 @@ body {
   text-align: left;
   /* colors */
   color: var(--Very-Dark-Desaturated-Violet);
+  /* fading animation */
+  animation: fading 1.25s 0s ease-in forwards;
 }
 .paragraph {
   width: 70%;
@@ -343,6 +351,8 @@ body {
   line-height: 1.6em;
   /* colors */
   color: var(--Dark-Grayish-Violet);
+  /* fading animation */
+  animation: fading 1.25s 0s ease-in forwards;
 }
 .text-section::after {
   content: '';
@@ -357,7 +367,16 @@ body {
   background-color: var(--Pale-Violet);
   opacity: 0.09;
 }
-/* animation  */
+/* animations  */
+
+@keyframes dropping {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 1100px;
+  }
+}
 
 @keyframes loading-left {
   0% {
@@ -416,14 +435,12 @@ body {
   }
 
   .main-heading {
-    margin: 0;
-    margin-bottom: 64px;
+    margin: 0 0 64px;
     text-align: center;
   }
   .paragraph {
     text-align: center;
-    margin: 0;
-    margin-bottom: 32px;
+    margin: 0 0 32px;
   }
 }
 
@@ -439,7 +456,6 @@ body {
     height: 440px;
   }
   .profile .avatar {
-    height: 25px;
     height: 25px;
   }
   .profile .name {
@@ -474,7 +490,7 @@ body {
     font-size: 0.55rem;
     line-height: 12px;
   }
-  .walk-istimate {
+  .walk-estimate {
     width: 140px;
     height: 26px;
     margin-bottom: 6px;
@@ -485,7 +501,7 @@ body {
     font-size: 0.6rem;
     height: 35px;
   }
-  .walk-istimate .price {
+  .walk-estimate .price {
     font-size: 0.8rem;
   }
 }
