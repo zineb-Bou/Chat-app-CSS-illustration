@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 :root {
   /* Colors */
 
@@ -38,7 +38,7 @@ These two colors are the vibrant background colors you see throughout the design
 
 body {
   flex: 1;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -51,34 +51,49 @@ body {
   flex: 1;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  position: relative;
 }
-.mobile-screen-section {
-  width: 55%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mobile-screen-section:before {
+.main:before {
   content: '';
-  height: 0;
-  width: 600px;
-  margin-top: -50%;
-  margin-left: -600px;
+  height: 600px;
+  width: 350px;
   z-index: -1;
   border-radius: 0 0 1000px 1000px;
   /* colors */
   background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   /* dropping down animation */
-  animation: dropping 0.75s 1.25s ease-in forwards;
+  animation: dropping 0.75s ease-in forwards;
+  position: absolute;
+  left: -50px;
+  top: 0;
 }
+.main::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 200px;
+  z-index: -3;
+  /* colors */
+  background-color: var(--Pale-Violet);
+  opacity: 0.09;
+}
+.mobile-screen-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
 .mobile {
   box-sizing: border-box;
   width: 280px;
   height: 550px;
   border-radius: 35px;
-  margin-left: -80px;
   border: none;
   /* layout */
   display: flex;
@@ -205,8 +220,7 @@ body {
   line-height: 15px;
   /* colors */
   color: var(--Moderate-Violet);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 0,
-    rgba(0, 0, 0, 0.1) 0 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 0, rgba(0, 0, 0, 0.1) 0 0 1px 0;
   background: #ede5f4;
   animation: loading-left 1s 0.5s ease-out backwards;
 }
@@ -230,8 +244,7 @@ body {
   font-size: 0.6rem;
   /* colors  */
   color: var(--Very-Dark-Desaturated-Violet);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 0,
-    rgba(0, 0, 0, 0.1) 0 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 0, rgba(0, 0, 0, 0.1) 0 0 1px 0;
   background-color: #fff;
   animation: loading-right 1s 0.5s ease-out backwards;
 }
@@ -321,7 +334,7 @@ body {
 }
 /* text section */
 .text-section {
-  width: 55%;
+  width: 50%;
   position: relative;
   /* layout */
   display: flex;
@@ -354,19 +367,6 @@ body {
   /* fading animation */
   animation: fading 1.25s 0s ease-in forwards;
 }
-.text-section::after {
-  content: '';
-  width: 300px;
-  height: 600px;
-  border-radius: 300px 0 0 0;
-  position: absolute;
-  bottom: 0;
-  right: -140px;
-  z-index: -120;
-  /* colors */
-  background-color: var(--Pale-Violet);
-  opacity: 0.09;
-}
 /* animations  */
 
 @keyframes dropping {
@@ -374,7 +374,7 @@ body {
     height: 0;
   }
   100% {
-    height: 1100px;
+    height: 600px;
   }
 }
 
@@ -409,16 +409,13 @@ body {
   }
 }
 /* defining width for screens < 600px  */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .main {
     flex-direction: column;
-    height: auto;
   }
   .mobile-screen-section {
-    width: 100%;
-  }
-  .mobile {
     margin-top: 64px;
+    width: 100%;
   }
   .text-section {
     margin-top: 150px;
@@ -426,12 +423,9 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .text-section::after {
-    width: 250px;
-    height: 300px;
-    border-radius: 300px 0 0 0;
+  .main::after {
+    top: auto;
     bottom: 0;
-    right: -140px;
   }
 
   .main-heading {
@@ -441,67 +435,5 @@ body {
   .paragraph {
     text-align: center;
     margin: 0 0 32px;
-  }
-}
-
-/* defining width for screens < 300px  */
-@media (max-width: 400px) {
-  .mobile {
-    width: 235px;
-    height: 463px;
-    margin-left: -200px;
-  }
-  .app {
-    width: 220px;
-    height: 440px;
-  }
-  .profile .avatar {
-    height: 25px;
-  }
-  .profile .name {
-    font-size: 0.6rem;
-  }
-  .profile .occupation {
-    font-size: 0.6rem;
-  }
-  .app .top-header {
-    height: 55px;
-  }
-  .top-header .fas {
-    margin: 10px 12px;
-  }
-  .app .top-header .profile {
-    bottom: 4px;
-  }
-  .app .top-header::before {
-    height: 15px;
-  }
-  .media-msg img {
-    height: 35px;
-    width: 35px;
-  }
-  .received-msg {
-    margin-bottom: 10px;
-    font-size: 0.55rem;
-    line-height: 12px;
-  }
-  .sent-msg {
-    margin-bottom: 10px;
-    font-size: 0.55rem;
-    line-height: 12px;
-  }
-  .walk-estimate {
-    width: 140px;
-    height: 26px;
-    margin-bottom: 6px;
-    font-size: 0.6rem;
-  }
-  .input {
-    margin-top: 6px;
-    font-size: 0.6rem;
-    height: 35px;
-  }
-  .walk-estimate .price {
-    font-size: 0.8rem;
   }
 }
