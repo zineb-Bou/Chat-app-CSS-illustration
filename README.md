@@ -19,7 +19,4 @@ Users should be able to:
 ## Live site URL 
 [Live site URL](https://zineb-bou.github.io/Chat-app-CSS-illustration/)
 
-## Author
-
-- Website - [Zineb Boutaa](https://zineb-bou.github.io/)
-- Twitter - [@ZBoutaa](https://twitter.com/ZBoutaa)
+Made with 💖 by [ZINEB](https://zineb-bou.github.io/)utaa)
